@@ -1,0 +1,146 @@
+.home{
+    background-color: #dee1df;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.servicos_forms{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.servicos{
+    margin-top: 380px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#proporcao_form, #proporcao_result, #porcentagem_form, #porcentagem_result, #pg_form, #pg_result, #pa_form, #pa_result {
+    width: 400px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: justify;
+
+}
+
+.titulo_proporcao, .titulo_porcentagem, .titulo_pg, .titulo_pa{
+    text-align:left;
+    padding: 0;
+}
+
+#proporcao_result, #porcentagem_result, #pg_result, #pa_result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.btn_dashboard{
+
+    background-color: #d320a9;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 80px;
+    
+}
+
+.btn_calcular{
+
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100px;
+}
+
+.check{
+    width:50px;
+    height:50px;
+    margin:auto;
+}
+
+
+.btn_prova{
+
+    display: grid; 
+    place-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.btn_home{
+    text-align: center;
+}
+
+.img_home{
+    
+    text-align: center;
+    
+}
+
+footer {
+    margin-top: auto; 
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    
+}
+
+table {
+    width: 100%; /* Garante que a tabela ocupe toda a largura do espaço disponível */
+    border-collapse: collapse; /* Remove o espaçamento padrão entre as células da tabela */
+  }
+  
+  th, td {
+    border: 1px solid #ddd; /* Adiciona bordas cinza claras em todas as células */
+    padding: 8px; /* Adiciona um espaço interno nas células para melhor visualização */
+    text-align: left; /* Alinha o texto à esquerda dentro das células */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Cor de fundo cinza clara para a linha de cabeçalho */
+    font-weight: bold; /* Deixa o texto do cabeçalho em negrito */
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #ddd; /* Adiciona uma linha cinza clara abaixo de cada linha de dados */
+  }
+  
+  tbody tr:last-child {
+    border-bottom: none; /* Remove a borda da última linha para não ficar dupla */
+  }

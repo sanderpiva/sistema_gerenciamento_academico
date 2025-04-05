@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Pagina Web Consulta Questoes Prova</title>
+        <meta charset="utf=8">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    
+    <body class="servicos_forms">
+    
+        <h2>Consulta Questoes Prova</h2>
+        
+        <table border="1" cellpadding="5" cellspacing="0">
+            <!-- Cabeçalho da tabela -->
+            <tr>
+                <th>Codigo Questao</th>
+                <th>Codigo Conteudo</th>
+                <th>Codigo Disciplina</th>
+                <th>Codigo Prova</th>
+                <th>Registro professor</th>
+                <th>Descricao prova</th>
+                <th>Tipo prova</th>
+                <th>Acoes</th>
+            </tr>
+    
+            <!-- Dados dos alunos -->
+            <tr>
+                <td>M12345</td>
+                <td>M789</td>
+                <td>M89</td>
+                <td>M102</td>
+                <td>a789Q</td>
+                <td>P.A</td>
+                <td>Multipla escolha</td>
+                <td>
+                    <button onclick="atualizarQuestaoProva('M12345')">
+                        <img src="../../img/lapis.jpg" alt="Atualizar" style="width: 20px; height: 20px;">
+                    </button>
+                    
+                    <button onclick="excluirQuestaoProva('M12345')">
+                        <img src="../../img/x.jpg" alt="Excluir" style="width: 20px; height: 20px;">
+                    </button>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>M125</td>
+                <td>M789</td>
+                <td>M89</td>
+                <td>M102</td>
+                <td>a789Q</td>
+                <td>P.G</td>
+                <td>Multipla escolha</td>
+              
+                
+                <td>
+                    <button onclick="atualizarQuestaoProva('M125')">
+                        <img src="../../img/lapis.jpg" alt="Atualizar" style="width: 20px; height: 20px;">
+                    </button>
+                    
+                    <button onclick="excluirQuestaoProva('M125')">
+                        <img src="../../img/x.jpg" alt="Excluir" style="width: 20px; height: 20px;">
+                    </button>
+                    
+                </td>
+            </tr>
+        </table>
+        
+        <br>
+        <a href="../../servicos_professor/pagina_servicos_professor.php">Servicos</a>
+    
+        <script>
+            function atualizarQuestaoProva(codigo) {
+                alert("Atualizar registro de questao prova: " + codigo);
+                // Aqui pode redirecionar para uma pagina de atualizacao ou abrir um modal.
+            }
+    
+            function excluirQuestaoProva(codigo) {
+                const confirmar = confirm("Tem certeza que deseja excluir o registro de questao prova: " + codigo + "?");
+                if (confirmar) {
+                    alert("Registro excluido: " + codigo);
+                    // Aqui pode adicionar a logica para excluir no backend.
+                }
+            }
+        </script>
+    
+    </body>
+    <footer>
+        <p>Desenvolvido por Juliana e Sander</p>
+    </footer>
+    
+    </html>

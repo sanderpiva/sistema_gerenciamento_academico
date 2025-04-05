@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina Web Consulta Respostas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="servicos_forms">
+    
+    <h2>Consulta Respostas</h2>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <!-- Cabeçalho da tabela -->
+        <tr>
+            <th>codigoRespostas</th>
+            <th>codigoAluno</th>
+            <th>codigoProva</th>
+            <th>codigoQuestao</th>
+            <th>respostaDada</th>
+            <th>acertou</th>
+            <th>QUESTOES_CodigoQuestao</th>
+            <th>Acoes</th>
+        </tr>
+
+        <!-- Dados dos alunos -->
+        <tr>
+            <td>M12345</td>
+            <td>M789</td>
+            <td>M7</td>
+            <td>Ma5</td>
+            <td>Resposta bla, bla</td>
+            <td>Verdade</td>
+            <td>m12a</td>
+            
+            <td>
+                <button onclick="atualizarRespostas('M12345')">
+                    <img src="../../img/lapis.jpg" alt="Atualizar" style="width: 20px; height: 20px;">
+                </button>
+                
+                <button onclick="excluirRespostas('M12345')">
+                    <img src="../../img/x.jpg" alt="Excluir" style="width: 20px; height: 20px;">
+                </button>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>M125</td>
+            <td>M7489</td>
+            <td>M47</td>
+            <td>Ma54</td>
+            <td>Resposta bla, bla, bla</td>
+            <td>Falso</td>
+            <td>m12aBC</td>
+            <td>
+                <button onclick="atualizarRespostas('M125')">
+                    <img src="../../img/lapis.jpg" alt="Atualizar" style="width: 20px; height: 20px;">
+                </button>
+                
+                <button onclick="excluirRespostas('M125')">
+                    <img src="../../img/x.jpg" alt="Excluir" style="width: 20px; height: 20px;">
+                </button>
+                
+            </td>
+        </tr>
+    </table>
+    
+    <br>
+    <a href="../../servicos_professor/pagina_servicos_professor.php">Servicos</a>
+
+    <script>
+        function atualizarRespostas(codigo) {
+            alert("Atualizar registro de resposta: " + codigo);
+            // Aqui pode redirecionar para uma pagina de atualizacao ou abrir um modal.
+        }
+
+        function excluirRespostas(codigo) {
+            const confirmar = confirm("Tem certeza que deseja excluir o registro de resposta: " + codigo + "?");
+            if (confirmar) {
+                alert("Registro excluido: " + codigo);
+                // Aqui pode adicionar a logica para excluir no backend.
+            }
+        }
+    </script>
+</body>
+<footer>
+    <p>Desenvolvido por Juliana e Sander</p>
+</footer>
+
+</html>
