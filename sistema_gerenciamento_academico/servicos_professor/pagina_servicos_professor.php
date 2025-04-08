@@ -37,7 +37,7 @@
     <a href="../index.php">HomePage</a>
 </body>
 <footer class="servicos">
-    <p>Desenvolvido por Sander e Juliana</p>
+    <p>Desenvolvido por Juliana e Sander</p>
 </footer>
 
 </html>
